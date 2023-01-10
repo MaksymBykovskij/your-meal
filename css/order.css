@@ -48,7 +48,7 @@
 }
 
 .order__wrap_list {
-  /* display: none; */
+  display: none;
 }
 
 .order_open .order__wrap-title {
