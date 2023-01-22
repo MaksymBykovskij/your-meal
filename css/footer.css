@@ -39,6 +39,12 @@
 
 .footer__link-sn {
   color: #FF7020;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__link-sn:hover,
+.footer__link-sn:focus {
+  color: #FFAB08;
 }
 
 .footer__development {

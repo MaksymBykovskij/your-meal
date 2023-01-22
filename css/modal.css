@@ -24,16 +24,47 @@
   right: 10px;
   outline: 1px solid transparent;
   outline-offset: 3px;
+  border-radius: 3px;
+  transition: color 0.3s ease-in-out;
 }
 
 .modal__close:focus-visible {
   color: #FF7020;
-  outline-color: #FF7020;
-  border-radius: 3px;
+  outline-color: #FF7020;  
+}
+
+.modal__close:hover {
+  color: #FF7020;
+}
+
+.modal__close:active {
+  transform: translate(1px, 2px);
+}
+
+.modal__close:disabled {
+  background-color: #F9F9F9;
+  color: #ACACAC;
+}
+
+@supports not selector(:::focus-visible) {
+  .modal__close:focus {
+    color: #F86310;
+  }
 }
 
 @media (min-width: 480px) {
   .modal {
     padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    padding: 20px;
+  }
+
+  .modal__close {
+    top: 24px;
+    right: 24px;
   }
 }

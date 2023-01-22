@@ -27,9 +27,7 @@
   pointer-events: none;
 }
 
-.order__wrap-title:focus-visible:after {
-  outline-color: #FFAB08;
-}
+
 .order__title {
   font-weight: 600;
   font-size: 16px;
@@ -176,6 +174,7 @@
 
   .order__wrap-title {
     margin-bottom: 12px;
+    outline: none;
   }
 
   .order__title {
